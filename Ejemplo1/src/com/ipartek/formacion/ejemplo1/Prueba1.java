@@ -19,7 +19,6 @@ public class Prueba1 {
 		
 		Object o =p;
 		
-		
 		Punto pt1=(Punto) o;
 		
 		System.out.println(pt1);
