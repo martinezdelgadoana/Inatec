@@ -20,6 +20,11 @@ public class Prueba1 {
 		System.out.println(poligono);
 		System.out.println(poligono.get(1));
 		
+		poligono.getOrigen().setY(200);
+		
+		System.out.println(poligono);
+		System.out.println(poligono.get(1));
+		
 	}
 	
 	public static void mainIncrementos(String[] args) {

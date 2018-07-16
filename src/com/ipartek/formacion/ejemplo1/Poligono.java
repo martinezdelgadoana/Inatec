@@ -1,11 +1,13 @@
 package com.ipartek.formacion.ejemplo1;
 
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 
 public class Poligono {
 
 	private Punto origen;
-	private LinkedHashSet<Punto> puntos=new LinkedHashSet<>();
+	//private LinkedHashSet<Punto> puntos=new LinkedHashSet<>();
+	private LinkedHashMap<Integer,Punto> puntos=new LinkedHashMap<>();
 
 	public Poligono(Punto origen) {
 		this.origen =origen;
@@ -15,21 +17,23 @@ public class Poligono {
 		if(punto==null) {
 			throw new RuntimeException("No se admiten puntos nulos");
 		}
-		puntos.add(punto);
+		puntos.put(puntos.size(),punto);
 	}
 	
 	public Punto get(int indice) {
-		int i=0;
-		for (Punto punto:puntos) {
-			//i=0
-			if(i++==indice) {
-				return punto;
-			}}
-		return null;
+		return puntos.get(indice);
 		
 	}
 	
 	
+	public Punto getOrigen() {
+		return origen;
+	}
+
+	public void setOrigen(Punto origen) {
+		this.origen = origen;
+	}
+
 	@Override
 	public String toString() {
 		return "Poligono [origen=" + origen + ", puntos=" + puntos + "]";
