@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ejemploInterfaces;
+package ejemploInterfaces;
 
 public class Balon extends ObjetoDeporte implements Rodable{
 

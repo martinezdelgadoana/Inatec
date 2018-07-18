@@ -1,6 +1,7 @@
-package com.ipartek.formacion.ejemplomodificadores;
+package ejemplomodificadores;
 
-public class Modificadores2 {
+
+public class Modificadores {
 	
 	public String publico="public";
 	String paquete="(paquete)";
@@ -12,7 +13,7 @@ public class Modificadores2 {
 		System.out.println(m.paquete);
 		System.out.println(m.publico);
 		System.out.println(m.protegido);
-	//	System.out.println(m.privado);
+		System.out.println(m.privado);
 
 	}
 

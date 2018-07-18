@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ejemploInterfaces;
+package ejemploInterfaces;
 
 public interface Comestible {
 	void Comer();

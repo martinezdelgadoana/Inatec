@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
- 
-import com.ipartek.formacion.ejemplo1.Punto;
+
+import com.ipartek.formacion.ejemploPoligono.Punto;
 
 public class Ejemplo3 {
 	

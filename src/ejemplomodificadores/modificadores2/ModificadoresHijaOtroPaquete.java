@@ -1,8 +1,8 @@
-package com.ipartek.formacion.ejemplomodificadores.modificadores2;
+package ejemplomodificadores.modificadores2;
 
 
 
-import com.ipartek.formacion.ejemplomodificadores.Modificadores;
+import ejemplomodificadores.Modificadores;
 
 public class ModificadoresHijaOtroPaquete  extends Modificadores {
 

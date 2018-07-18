@@ -3,7 +3,7 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Ejemplo2 {
+public class LoogeryArray {
 	
 	 
 	@SuppressWarnings("unchecked")
@@ -42,7 +42,7 @@ public class Ejemplo2 {
 		System.out.println("Hola");
 		
 		
-		Logger l =Logger.getLogger(Ejemplo2.class.getName());
+		Logger l =Logger.getLogger(LoogeryArray.class.getName());
 		l.info("Prueba de looger");
 		l.log(Level.SEVERE,"prueba grave",new RuntimeException("Prueba de excepcion"));
 		
