@@ -1,6 +1,7 @@
 package otrosEjemplos;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
  
 
@@ -31,17 +32,17 @@ public class EjemploLista {
 		
 		
 		//Quiero borrar para todo punto p que cumpla...//Solo a partir de JAVA8
-		puntos.removeIf(p -> p.getX() < 2);
+		//puntos.removeIf(p -> p.getX() < 2);
 		
 		
-		/*
+		
 		 puntos.removeIf(new Predicate<Punto>(){
 		 @Override
 		 public boolean test(Punto p){ //test es un metodo
 		 	return p.getX() < 2;
 		 }
 		 });
-		 */
+		 
 		
 		
 		for (Punto p:puntos)
