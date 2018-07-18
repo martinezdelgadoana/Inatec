@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
+import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -125,14 +126,14 @@ public class Prueba1 {
 
 		puntos.remove(ptBorrar);
 
-		puntos.removeIf(p -> p.getX() < 2); // Java8
+		//puntos.removeIf(p -> p.getX() < 2); // Java8
 
-		// puntos.removeIf(new Predicate<Punto>() {
-		// @Override
-		// public boolean test(Punto p) {
-		// return p.getX() < 2;
-		// }
-		// });
+		 puntos.removeIf(new Predicate<Punto>() {
+		 @Override
+		 public boolean test(Punto p) {
+		 return p.getX() < 2;
+		 }
+		 });
 
 		for (Punto p : puntos)
 			System.out.println(p);
