@@ -1,3 +1,4 @@
+package consola;
 public class PruebaConsola
 {
 	public static void main(String[] argumentos) {
