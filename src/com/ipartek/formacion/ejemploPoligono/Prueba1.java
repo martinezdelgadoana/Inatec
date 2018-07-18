@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ejemplo1;
+package com.ipartek.formacion.ejemploPoligono;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
