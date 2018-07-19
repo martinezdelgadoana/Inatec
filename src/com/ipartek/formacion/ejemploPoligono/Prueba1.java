@@ -57,7 +57,7 @@ public class Prueba1 {
 //		i += 1;
 //		i++;
 //		++i;
-
+		System.out.println(i);		//1
 		System.out.println(i);		//1
 		System.out.println(i++);	//1
 		System.out.println(i);		//2
