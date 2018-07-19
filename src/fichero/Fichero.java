@@ -21,7 +21,7 @@ public class Fichero {
 		FileWriter fw = new FileWriter(RUTA_FICHERO, SOBREESCRIBIR);
 		PrintWriter pw = new PrintWriter(fw,AUTO_FLUSH);
 		
-		pw.println("Hola desde Java");
+		pw.println("Hola dsd Java");
 		pw.println("Segunda línea");
 		
 		pw.close();
