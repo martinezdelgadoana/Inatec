@@ -15,7 +15,10 @@ public class Fichero {
 
 	public enum Genero {
 		MUJER, HOMBRE
-	};
+		
+		
+		
+	}; 
 
 	public static void main(String[] args) throws IOException {
 		FileWriter fw = new FileWriter(RUTA_FICHERO, SOBREESCRIBIR);
