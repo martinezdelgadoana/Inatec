@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 public class Prueba1 {
 
 	public final static int TAM_ARRAY = 10;
+	
 
 	public static void main(String[] args) {
 		System.out.println(factorial(10));
@@ -50,6 +51,8 @@ public class Prueba1 {
 
 //		x = x @ y;
 //		x @= y;
+		
+		///
 //		i = i + 1;
 //		i += 1;
 //		i++;
