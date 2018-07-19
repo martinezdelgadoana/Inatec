@@ -11,9 +11,11 @@ public class VideoYoutubeMain {
 	private static final int LISTADO = 1;
 	private static final int SALIR = 0;
 	private static boolean CONTINUAR=true;
+	
+	
 	public static void main(String[] args) {
-	String videoIDSeleccionado;
-	int opcion = LISTADO;
+		String videoIDSeleccionado;
+		int opcion = LISTADO;
 		
 		cargarVideos();
 		

@@ -2,9 +2,10 @@ package com.ipartek.formacion.prestamolibros.consola;
 
 import java.util.Scanner;
 
-import com.ipartek.formacion.video.accessodatos.CrudAble;
-import com.ipartek.formacion.video.accessodatos.VideoYoutubeArrayDAO;
-import com.ipartek.formacion.video.pojo.VideoYoutube;
+import com.ipartek.formacion.prestamolibros.accesodatos.CrudAble;
+import com.ipartek.formacion.prestamolibros.accesodatos.LibroArrayDAO;
+import com.ipartek.formacion.prestamolibros.pojo.Libro;
+
 
 public class ConsolaBiblioteca {
 
@@ -12,10 +13,10 @@ public class ConsolaBiblioteca {
 	private static final int SALIR = 0;
 	private static boolean CONTINUAR=true;
 	public static void main(String[] args) {
-	String videoIDSeleccionado;
+	String libroIDSeleccionado;
 	int opcion = LISTADO;
 		
-		cargarVideos();
+		cargarLibros();
 		
 		mostrarMenu();
 		
@@ -24,7 +25,7 @@ public class ConsolaBiblioteca {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("SC"+sc.nextLine());
-		VideoYoutubeArrayDAO vyad=VideoYoutubeArrayDAO.getInstance();
+		LibroArrayDAO vyad=LibroArrayDAO.getInstance();
 
 		
 		while(sc.nextLine()!="0") {
@@ -32,23 +33,23 @@ public class ConsolaBiblioteca {
 				switch(sc.nextLine()) {
 					
 					case "1":
-						listadoVideos();
+						listadoLibros();
 						mostrarMenu();
 						break;
 						
 					case "2":
 						//mostrarVideo con id
-						System.out.println("Introduce ID Video");
+						System.out.println("Introduce ID Libro");
 						Scanner sc1 = new Scanner(System.in);
-						videoIDSeleccionado=sc1.nextLine();
-						System.out.println("Video seleccionado ID:"+videoIDSeleccionado);
-						mostrarVideo(vyad.getById(Long.valueOf(videoIDSeleccionado)));
+						libroIDSeleccionado=sc1.nextLine();
+						System.out.println("Libro seleccionado ID:"+libroIDSeleccionado);
+						mostrarLibro(vyad.getById(Long.valueOf(libroIDSeleccionado)));
 						break;
 
 					case "3":
 						//mostrarVideo con id
-						System.out.println("Añadiendo video");
-						aniadirVideo();
+						System.out.println("Añadiendo libro");
+						aniadirLibro();
 						
 					case "0":
 						p("ADIOS");
@@ -66,25 +67,32 @@ public class ConsolaBiblioteca {
 		sc.close();
 	}
 
+	private static void mostrarLibro(Libro byId) {
+		Libro l=new Libro(0, null, null, null, null);
+		p(l.getId() + "\t" + l.getAutor() + "\t" + l.getTitulo()+ "\t" +l.getEditorial()+ "\t" +l.getIsbn());
+		
+	}
+
 	private static void mostrarMenu() {
 		p("------------");
-		p("VideoYoutube");
+		p("Biblioteca PepePepito");
 		p("------------");
 		p("");
-		p("1. Listado de videos");
-		p("2. Mostrar Video");
-		p("3. Añadir video");
+		p("1. Listado de libros");
+		p("2. Mostrar libro");
+		p("3. Añadir libro");
 		p("0. Salir");
 		p("Elige una opción");
 	}
 	
-	private static void listadoVideos() {
-		CrudAble<VideoYoutube> dao = VideoYoutubeArrayDAO.getInstance();
+	private static void listadoLibros() {
+	
+		CrudAble<Libro> dao = LibroArrayDAO.getInstance();
 		
 		mostrarCabecera();
 		
-		for(VideoYoutube video: dao.getAll()) {
-			mostrarVideo(video);
+		for(Libro libro: dao.getAll()) {
+			mostrarLibro(libro);
 		}
 	}
 
@@ -92,26 +100,30 @@ public class ConsolaBiblioteca {
 		p("ID\tCODIGO\tTITULO");
 	}
 	
-	private static void aniadirVideo() {
+	private static void aniadirLibro() {
 		
-		VideoYoutube video = new VideoYoutube(33, "titut", "24");
+		Libro libro = new Libro(33, "titut", "24", "ab", "cd");
 		
-		VideoYoutubeArrayDAO vyad=VideoYoutubeArrayDAO.getInstance();
-		vyad.insert(video);
-		System.out.println("Video con ID "+video.getId()+" añadido");
+		LibroArrayDAO lad=LibroArrayDAO.getInstance();
+		//lad.insert(libro);
+		lad.insert(libro);
+		System.out.println("Libro con ID "+libro.getId()+" añadido");
 	
+		
+		
+		
 		
 	}
 	
-	private static void mostrarVideo(VideoYoutube video) {
-		p(video.getId() + "\t" + video.getCodigo() + "\t" + video.getTitulo());
+	private static void mostrarLibros(Libro libro) {
+		p(libro.getId() + "\t" + libro.getAutor() + "\t" + libro.getTitulo());
 	}
 
-	private static void cargarVideos() {
-		CrudAble<VideoYoutube> dao = VideoYoutubeArrayDAO.getInstance();
+	private static void cargarLibros() {
+		CrudAble<Libro> dao = LibroArrayDAO.getInstance();
 		
 		for(int i = 1; i <= 5; i++) {
-			dao.insert(new VideoYoutube(i, "codigo" + i, "titulo" + i));
+			dao.insert(new Libro(i, "codigo" + i, "titulo" + i, "ff"+1, "dddd"+i));
 		}
 	}
 	
