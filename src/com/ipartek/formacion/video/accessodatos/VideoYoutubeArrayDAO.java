@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.ipartek.formacion.prestamolibros.accesodatos.CrudAble;
 import com.ipartek.formacion.video.pojo.VideoYoutube;
 
 public class VideoYoutubeArrayDAO implements CrudAble<VideoYoutube> {

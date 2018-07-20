@@ -7,7 +7,7 @@ import java.util.List;
 import com.ipartek.formacion.prestamolibros.pojo.Libro;
 
 
-public class LibroArrayDAO implements CrudAble<Libro>, com.ipartek.formacion.video.accessodatos.CrudAble<Libro> {
+public class LibroArrayDAO implements  CrudAble<Libro> {
 
 	private List<Libro> libros = new ArrayList<>();
 

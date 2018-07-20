@@ -11,11 +11,9 @@ public class VideoYoutubeMain {
 	private static final int LISTADO = 1;
 	private static final int SALIR = 0;
 	private static boolean CONTINUAR=true;
-	
-	
 	public static void main(String[] args) {
-		String videoIDSeleccionado;
-		int opcion = LISTADO;
+	String videoIDSeleccionado;
+	int opcion = LISTADO;
 		
 		cargarVideos();
 		
@@ -81,7 +79,7 @@ public class VideoYoutubeMain {
 	}
 	
 	private static void listadoVideos() {
-		CrudAble<VideoYoutube> dao = VideoYoutubeArrayDAO.getInstance();
+		CrudAble<VideoYoutube> dao = (CrudAble<VideoYoutube>) VideoYoutubeArrayDAO.getInstance();
 		
 		mostrarCabecera();
 		
@@ -110,7 +108,7 @@ public class VideoYoutubeMain {
 	}
 
 	private static void cargarVideos() {
-		CrudAble<VideoYoutube> dao = VideoYoutubeArrayDAO.getInstance();
+		CrudAble<VideoYoutube> dao = (CrudAble<VideoYoutube>) VideoYoutubeArrayDAO.getInstance();
 		
 		for(int i = 1; i <= 5; i++) {
 			dao.insert(new VideoYoutube(i, "codigo" + i, "titulo" + i));
