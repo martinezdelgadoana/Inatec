@@ -5,6 +5,7 @@ public class Prueba1 {
 	public static final int TAM_ARRAY = 10;
 	
 	
+	@SuppressWarnings("unused")
 	public static void main (String[] args) {
 		Number nEjemplo=new Float(3.4);
 		Number[] numeros =new Number[2];

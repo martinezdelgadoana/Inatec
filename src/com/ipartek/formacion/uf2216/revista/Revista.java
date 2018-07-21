@@ -87,7 +87,7 @@ public class Revista implements  CrudAble<Revista> {
 	@Override
 	public boolean insert(Revista pojo) {
 		
-		File fichero = new File ("c:\\temp\\lineadecodigo\\fichero.txt");
+		File fichero = new File ("D:\\eWorkSpaceGITHUB_CVS\\Ipartek\\IpartekWORK\\src\\fichero.txt");
 		FileWriter fichero1 = null;
         PrintWriter pw = null;
         try{

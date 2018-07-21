@@ -30,7 +30,9 @@ class LibroArrayDAOTest {
 	static final String MOCK2_CLIENTE="cLIENTE";
 
 	private static final long MOCK_NUEVO_ID = 555;
+	@SuppressWarnings("unused")
 	private static final String MOCK_NUEVO_CODIGO = "noexisteeninternet";
+	@SuppressWarnings("unused")
 	private static final String MOCK_NUEVO_TITULO = "Video de prueba";
 
 	private static LibroArrayDAO dao = null;
@@ -54,10 +56,6 @@ class LibroArrayDAOTest {
 		assertTrue(dao.insert(mock2));
 	}
 
-	private void Libro() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@AfterEach
 	void tearDown() throws Exception {
@@ -81,7 +79,7 @@ class LibroArrayDAOTest {
 
 	@Test
 	void testGetAll() {
-		List<com.ipartek.formacion.prestamolibros.pojo.Libro> videos = dao.getAll();
+		List<Libro> videos = dao.getAll();
 
 		assertNotNull(videos);
 		assertEquals(2, videos.size());
@@ -90,7 +88,7 @@ class LibroArrayDAOTest {
 
 	@Test
 	void testGetById() {
-		com.ipartek.formacion.prestamolibros.pojo.Libro libro = dao.getById(MOCK2_ID);
+		Libro libro = dao.getById(MOCK2_ID);
 
 		assertNotNull(libro);
 		assertEquals(mock2, libro);
@@ -112,7 +110,7 @@ class LibroArrayDAOTest {
 
 		assertEquals(cuantosAntes + 1, cuantosDespues);
 
-		com.ipartek.formacion.prestamolibros.pojo.Libro recogido = dao.getById(MOCK_NUEVO_ID);
+		Libro recogido = dao.getById(MOCK_NUEVO_ID);
 
 		assertEquals(recogido, libroInsertado);
 
@@ -127,17 +125,19 @@ class LibroArrayDAOTest {
 	void testUpdate() {
 		assertFalse(dao.update(null));
 
-		// Modificamos un Video que Existe
+		// Modificamos un Libro que Existe
 		Libro libroModificarConID = new Libro(MOCK1_ID, "1", "qqq", "ttt", "ddd");
 		assertTrue(dao.update(libroModificarConID));
 		// recuperar video y comprobar atributos
-		com.ipartek.formacion.prestamolibros.pojo.Libro libroModificado = dao.getById(MOCK1_ID);
+		@SuppressWarnings("unused")
+		Libro libroModificado = dao.getById(MOCK1_ID);
 		assertEquals(MOCK1_ID, libroModificarConID.getId());
 		assertEquals("El Fary", libroModificarConID.getTitulo());
 		assertEquals("fff", libroModificarConID.getAutor());
 
-		// Modificamos un Video que NO Existe
-		Libro videoModificarSinID = new Libro(ID_INEXISTENTE, "Inexistente", "fff", "fff", "rr");
+		// Modificamos un Libro que NO Existe
+		@SuppressWarnings("unused")
+		Libro libroModificarSinID = new Libro(ID_INEXISTENTE, "Inexistente", "fff", "fff", "rr");
 		assertFalse(dao.update(libroModificarConID));
 	}
 
