@@ -29,6 +29,7 @@ public class VideoYoutubeArrayDAO implements CrudAble<VideoYoutube> {
 		return videos;
 	}
 
+	@SuppressWarnings("static-access")
 	public VideoYoutube getById(long id) {
 		VideoYoutube resul = null;
 		//foreach
@@ -54,6 +55,7 @@ public class VideoYoutubeArrayDAO implements CrudAble<VideoYoutube> {
 		return resul;
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public boolean update(VideoYoutube videoUpdate) {
 		boolean resul = false;
@@ -75,6 +77,7 @@ public class VideoYoutubeArrayDAO implements CrudAble<VideoYoutube> {
 		return resul;
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public boolean delete(long id) {
 		boolean resul = false;

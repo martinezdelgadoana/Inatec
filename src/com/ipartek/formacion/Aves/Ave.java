@@ -33,6 +33,7 @@ public abstract class Ave{
 		num_aves++;
 		
 		
+		@SuppressWarnings("unused")
 		String nombreAves = DatosPersonales.getNombreAve();
 		
 	}

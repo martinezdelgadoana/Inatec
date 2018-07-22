@@ -9,6 +9,7 @@ public class Canario extends Ave{
 	public Canario(char sexo,Integer edad) {
 		super(sexo,edad);
 	}
+	@SuppressWarnings("static-access")
 	public Canario(char sexo,int edad,Integer tamanio, int altura) {
 		super(sexo,edad);
 		this.tamanio=tamanio;

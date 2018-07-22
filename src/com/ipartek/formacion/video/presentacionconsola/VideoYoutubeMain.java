@@ -5,11 +5,12 @@ import java.util.Scanner;
 import com.ipartek.formacion.video.accesodatos.CrudAble;
 import com.ipartek.formacion.video.accesodatos.VideoYoutubeArrayDAO;
 import com.ipartek.formacion.video.pojo.VideoYoutube;
-
+@SuppressWarnings("unused")
 public class VideoYoutubeMain {
 
 	private static final int LISTADO = 1;
 	private static final int SALIR = 0;
+	
 	private static boolean CONTINUAR=true;
 	public static void main(String[] args) {
 	String videoIDSeleccionado;
@@ -91,7 +92,7 @@ public class VideoYoutubeMain {
 	private static void mostrarCabecera() {
 		p("ID\tCODIGO\tTITULO");
 	}
-	
+	@SuppressWarnings("static-access")
 	private static void aniadirVideo() {
 		
 		VideoYoutube video = new VideoYoutube(33, "titut", "24");
@@ -103,6 +104,7 @@ public class VideoYoutubeMain {
 		
 	}
 	
+	@SuppressWarnings("static-access")
 	private static void mostrarVideo(VideoYoutube video) {
 		p(video.getId() + "\t" + video.getCodigo() + "\t" + video.getTitulo());
 	}

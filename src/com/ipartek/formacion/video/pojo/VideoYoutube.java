@@ -5,6 +5,7 @@ public class VideoYoutube {
 	private String codigo;
 	private String titulo;
 
+	@SuppressWarnings("static-access")
 	public VideoYoutube(long id, String codigo, String titulo) {
 		this.id = id;
 		this.codigo = codigo;
@@ -19,6 +20,7 @@ public class VideoYoutube {
 		return id;
 	}
 
+	@SuppressWarnings("static-access")
 	public void setId(long id) {
 		this.id = id;
 	}
@@ -54,6 +56,7 @@ public class VideoYoutube {
 		return result;
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

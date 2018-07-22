@@ -3,6 +3,7 @@ package com.ipartek.formacion.Aves;
 
 public class Principal extends Ave {
 	static int num_aves=0;
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 
 		//Ave.mostrarNAves();

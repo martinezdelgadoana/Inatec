@@ -10,8 +10,11 @@ import com.ipartek.formacion.prestamolibros.pojo.Libro;
 public class ConsolaBiblioteca {
 
 	private static final int LISTADO = 1;
+	@SuppressWarnings("unused")
 	private static final int SALIR = 0;
+	@SuppressWarnings("unused")
 	private static boolean CONTINUAR=true;
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 	String libroIDSeleccionado;
 	int opcion = LISTADO;
@@ -115,6 +118,7 @@ public class ConsolaBiblioteca {
 		
 	}
 	
+	@SuppressWarnings("unused")
 	private static void mostrarLibros(Libro libro) {
 		p(libro.getId() + "\t" + libro.getAutor() + "\t" + libro.getTitulo());
 	}

@@ -114,6 +114,7 @@ class VideoYoutubeArrayDAOTest {
 		assertEquals(cuantosDespues, cuantosDespuesNull);
 	}
 
+	@SuppressWarnings("static-access")
 	@Test
 	void testUpdate() {
 		assertFalse(dao.update(null));
