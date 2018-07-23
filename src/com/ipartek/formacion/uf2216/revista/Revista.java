@@ -87,7 +87,11 @@ public class Revista implements  CrudAble<Revista> {
 	@Override
 	public boolean insert(Revista pojo) {
 		
+<<<<<<< HEAD
 		File fichero = new File ("c:\\temp\\lineadecodigo\\fichero.txt");
+=======
+		File fichero = new File ("D:\\eWorkSpaceGITHUB_CVS\\Ipartek\\IpartekWORK\\src\\fichero.txt");
+>>>>>>> branch 'master' of https://github.com/martinezdelgadoana/Ipartek/
 		FileWriter fichero1 = null;
         PrintWriter pw = null;
         try{

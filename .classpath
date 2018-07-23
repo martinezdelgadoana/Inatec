@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/AnaWork/joda-time-2.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/curso/.p2/pool/plugins/org.junit.jupiter.api_5.0.0.v20170910-2246.jar">
 		<attributes>
@@ -9,5 +10,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="/Ejemplo1"/>
+=======
+	<classpathentry kind="lib" path="D:/eWorkSpaceGITHUB_CVS/lib/joda-time-2.10.jar"/>
+	<classpathentry kind="lib" path="D:/eWorkSpaceGITHUB_CVS/lib/junit-platform-commons-1.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/eWorkSpaceGITHUB_CVS/lib/junit-jupiter-api-5.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/eWorkSpaceGITHUB_CVS/lib/opentest4j-1.0.0.jar"/>
+>>>>>>> branch 'master' of https://github.com/martinezdelgadoana/Ipartek/
 	<classpathentry kind="output" path="bin"/>
 </classpath>

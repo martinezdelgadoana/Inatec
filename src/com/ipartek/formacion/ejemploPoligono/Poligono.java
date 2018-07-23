@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ejemploPoligono;
+package com.ipartek.formacion.ejemplopoligono;
 
 import java.util.LinkedHashMap;
 

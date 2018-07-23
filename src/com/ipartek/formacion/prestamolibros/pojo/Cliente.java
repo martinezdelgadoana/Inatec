@@ -1,9 +1,14 @@
 package com.ipartek.formacion.prestamolibros.pojo;
 
 import java.util.List;
+<<<<<<< HEAD
 
 public class Cliente {
 
+=======
+@SuppressWarnings("unused")
+public class Cliente {
+>>>>>>> branch 'master' of https://github.com/martinezdelgadoana/Ipartek/
 	private long id;
 	private String dni;//TODO: private DNI dni
 	private String nombre;
