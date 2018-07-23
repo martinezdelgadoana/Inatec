@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 
 public class Fichero {
 
-	private static final String RUTA_FICHERO = "C:\\AnaWork\\fichero.txt";
+	private static final String RUTA_FICHERO = "C:\\AnaWork\\EjemplosANA\\src\\com\\ipartek\\formacion\\fichero.txt";
 	private static final boolean AUTO_FLUSH = true;
 	private static final boolean SOBREESCRIBIR = false;
 	public final static int TAM_ARRAY = 10;
