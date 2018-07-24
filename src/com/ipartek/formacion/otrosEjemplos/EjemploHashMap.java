@@ -5,7 +5,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.ipartek.formacion.ejemplopoligono.Punto;
+import com.ipartek.formacion.ejemploPoligono.Punto;
+
 
 public class EjemploHashMap {
 	

@@ -2,7 +2,6 @@ package CASA.controlficheros.csv;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 
 import CASA.controlficheros.properties.LeerProperties;
 
@@ -35,7 +34,7 @@ public class EscribirCSV {
 
 			fw.flush();
 			fw.close();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// Error al crear el archivo, por ejemplo, el archivo 
 			// está actualmente abierto.
 			e.printStackTrace();

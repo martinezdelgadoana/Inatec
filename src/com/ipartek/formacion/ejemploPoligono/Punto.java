@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ejemplopoligono;
+package com.ipartek.formacion.ejemploPoligono;
 
 /**
  * Clase que representa un punto en el plano

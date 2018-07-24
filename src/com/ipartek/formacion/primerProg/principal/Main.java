@@ -7,10 +7,8 @@ import com.ipartek.formacion.primerProg.personas.Persona;
 
 public class Main {
 
-<<<<<<< HEAD
-=======
 	@SuppressWarnings("unused")
->>>>>>> branch 'master' of https://github.com/martinezdelgadoana/Ipartek/
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("hi");

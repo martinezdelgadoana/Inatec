@@ -6,8 +6,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ipartek.formacion.prestamolibros.pojo.Libro;
-
 
 public class Revista implements  CrudAble<Revista> {
 	
