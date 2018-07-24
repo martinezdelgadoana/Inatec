@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ejemplopoligono;
+package com.ipartek.formacion.ejemploPoligono;
 
 public class PuntoNombre extends Punto {
 	private String nombre;

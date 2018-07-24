@@ -1,3 +1,4 @@
+package com.ipartek.formacion;
 public class PruebaConsola
 {
 	public static void main(String[] argumentos) {
