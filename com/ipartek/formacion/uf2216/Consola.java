@@ -3,11 +3,9 @@ package com.ipartek.formacion.uf2216;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.util.Scanner;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+import java.util.Scanner;
 
 import com.ipartek.formacion.uf2216.revista.Revista;
 
@@ -126,7 +124,7 @@ public class Consola {
 			System.out.println("ISBN Introducido"+ISBN);
 		
 			System.out.println("ISBN::: "+revista.getISBN()+" añadido");
-		
+			sc.close();
 			return revista;
 		}
 		
@@ -141,7 +139,7 @@ public class Consola {
 				
 						
 					PrintWriter pw = new PrintWriter(fw,AUTO_FLUSH);
-					
+					mostrarCabecera();
 					pw.println(rev.getISBN() + "\t" + rev.getTitulo() + "\t" + rev.getFormato());
 					
 					
