@@ -6,8 +6,24 @@
 		<servlet-name>comenzarJuego</servlet-name>
 		<servlet-class>com.ipartek.ahorcado.servlets.InicioServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>comprobarLetra</servlet-name>
+		<servlet-class>com.ipartek.ahorcado.servlets.ComprobarLetra</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>comenzarJuego</servlet-name>
 		<url-pattern>/comenzarJuego</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>comprobarLetra</servlet-name>
+		<url-pattern>/comprobarLetra</url-pattern>
+	</servlet-mapping>
+	<!-- servlet-mapping>
+		<servlet-name>enviar</servlet-name>
+		<url-pattern>/enviar</url-pattern>
+	</servlet-mapping> -->
+	<!-- servlet-mapping>
+		<servlet-name>ComprobarLetra</servlet-name>
+		<url-pattern>/ComprobarLetra</url-pattern>
+	</servlet-mapping -->
 </web-app>
