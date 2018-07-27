@@ -18,7 +18,7 @@ public class InicioServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			request.setCharacterEncoding("UTF-8");
 			
-			System.out.println("InicioServlet");	
+			//System.out.println("InicioServlet");	
 			response.sendRedirect("aJugar.jsp");
 	}
 }

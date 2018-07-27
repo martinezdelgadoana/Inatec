@@ -22,23 +22,28 @@ public class ComprobarLetra extends HttpServlet {
 		String palabra=CrearPalabra.rellenarPalabrasArray();		
 		strBu = new StringBuilder(palabra.length());
 		
-		
-		for (int i=0; i<palabra.length()-1;i++) {
-			strBu.append('-');
-		}
+		//Colocar en el strBuilder '-' para mostrar cuantos espacios tiene
+		colocarEspacios(palabra);
 		
 		if(palabra.contains(letra)) {			
 			System.out.println("Letra esta en palabra en la pos "+palabra.indexOf( letra ));
 			
-			 //String builder para hacer _ _ _ _ _ y luego cambiarlo por _ _ r _ _ _
+			//Cambio el hueco '-' de la posicion donde esta la letra por la letra
 			strBu.insert(palabra.indexOf( letra ), letra);
+			//Se vacia todo el tiempo el strBu!!!!!!!!!
 			
 			System.out.println("STRBUILDER... "+strBu.toString());
-			
+			response.sendRedirect("aJugar.jsp");
 		}else {
 			System.out.println("FALLO");
 		}
-		response.sendRedirect("aJugar.jsp"); 
+		 
+	}
+
+	public void colocarEspacios(String palabra) {
+		for (int i=0; i<palabra.length()-1;i++) {
+			strBu.append('-');
+		}
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);

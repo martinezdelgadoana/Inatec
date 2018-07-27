@@ -18,8 +18,8 @@
             <legend>Letra</legend>
             <p>
                 <label for="letra">Letra</label>
-                <input type="text" name="letra" id="letra" 
-                	value='<jsp:getProperty property="letra" name="letra"/>' />
+                <input type="text" name="letra" id="letra" />
+                	<!--value='<jsp:getProperty property="letra" name="letra"/>' /-->
             </p>
            
         </fieldset>
