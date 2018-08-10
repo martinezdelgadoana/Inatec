@@ -16,11 +16,6 @@ public abstract class Ave{
 	public String nombres;
 	
 	
-
-	
-	
-	
-	
 	/* La clase Ave tendrá un método abstracto que s7erá cantar. Para un Piolín cantar
 	 será sacar el mensaje “Pio-pio soy un Piolín” +y para un Loro cantar será sacar
 	 un mensaje diciendo “Piiio-piiiio loro bonito”*/
@@ -42,6 +37,8 @@ public abstract class Ave{
 		
 		String nombreAve = DatosPersonales.getNombreAve();
 		
+		System.out.println(nombreAve);
+		
 	}
 	
 	public Ave() {
@@ -61,7 +58,7 @@ public abstract class Ave{
 	}
 	
 	public static void mostrarNAves() {
-		System.out.println( num_aves);
+		System.out.println("NºAves creadas:"+ num_aves);
 	}
 	public char getSexo() {
 		return sexo;
@@ -77,6 +74,13 @@ public abstract class Ave{
 		edad=edadr;
 	}
 	
-	
+	public static void cantar(String quien) {
+		
+		if(quien.equals("Piolin")) {
+			System.out.println("Pio-pio soy un Piolín");
+		}else if(quien.equals("Loro")) {
+			System.out.println("Piiio-piiiio loro bonito");
+		}
+	}
 	
 }

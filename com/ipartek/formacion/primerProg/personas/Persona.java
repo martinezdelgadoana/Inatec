@@ -18,6 +18,7 @@ public class Persona {
 		this.altura=altura;
 		this.fechaNacimiento=fechaNacimiento;
 		//this.numeroCuenta=numeroCuenta;
+		numeroCuenta="12345678901234567890";
 		this.setNumeroCuenta(numeroCuenta);
 	}
 	

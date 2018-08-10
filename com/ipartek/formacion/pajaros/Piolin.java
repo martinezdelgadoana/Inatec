@@ -2,6 +2,7 @@ package com.ipartek.formacion.pajaros;
 
 public class Piolin extends Canario{
 	public Integer nPeliculas;
+	public static String nombrepio;
 
 	public Piolin(char sexo, Integer edad, Integer nPeliculas,int altura) {
 		super(sexo, edad,nPeliculas,altura);
@@ -11,14 +12,12 @@ public class Piolin extends Canario{
 	
 	
 
-/*
-	• Llamar al método altura con la instancia del Piolín
-
-	• Modificar el tamaño del Piolín y volver a invocar al método altura
-	
-	• Mostrar el número de Aves creadas. 
-	
-	*/
+	public static void setNombre(String nombrePio) {
+		nombrepio = nombrePio;
+	}
+	public static String getNombre() {
+		return nombrepio;
+	}
 	
 public static void altura(Piolin pio) {
 		

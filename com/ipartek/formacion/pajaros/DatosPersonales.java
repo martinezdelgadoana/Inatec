@@ -13,8 +13,9 @@ public class DatosPersonales {
 	public static String getNombreAve() {
 		return nombreAve;
 	}
-	public void setNombreAve(String nombreAver) {
+	public static void setNombreAve(String nombreAver) {
 		nombreAve=nombreAver;
+		Piolin.setNombre(nombreAver);
 	}	
 	
 }
