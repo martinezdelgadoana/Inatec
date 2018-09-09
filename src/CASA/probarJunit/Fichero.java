@@ -1,4 +1,4 @@
-package com.ipartek.formacion.fichero;
+package CASA.probarJunit;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,6 +13,18 @@ public class Fichero {
 	private static final boolean SOBREESCRIBIR = false;
 	public final static int TAM_ARRAY = 10;
 
+	public enum Genero {
+		MUJER, HOMBRE
+		
+		
+		
+	}; 
+
+	public static void aProbar(int a,int b) {
+		System.out.println(a+b);
+		int res=a+b;
+	}
+	
 	public static void main(String[] args) throws IOException {
 		FileWriter fw = new FileWriter(RUTA_FICHERO, SOBREESCRIBIR);
 		PrintWriter pw = new PrintWriter(fw,AUTO_FLUSH);
@@ -35,12 +47,6 @@ public class Fichero {
 		br.close();
 		fr.close();
 	}
-	
-	public static void aProbar(int a,int b) {
-		System.out.println(a+b);
-		int res=a+b;
-	}
-	
 	
 
 }
