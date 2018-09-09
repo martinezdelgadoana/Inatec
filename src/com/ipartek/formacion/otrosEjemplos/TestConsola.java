@@ -2,7 +2,7 @@ package com.ipartek.formacion.otrosEjemplos;
 
 import java.io.IOException;
 
-public class testconsola {
+public class TestConsola {
 	public static void main( String[] args) {
 		// Lectura de un byte
 		try {
