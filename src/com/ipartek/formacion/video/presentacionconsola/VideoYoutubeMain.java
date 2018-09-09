@@ -2,8 +2,8 @@ package com.ipartek.formacion.video.presentacionconsola;
 
 import java.util.Scanner;
 
-import com.ipartek.formacion.video.accesodatos.CrudAble;
-import com.ipartek.formacion.video.accesodatos.VideoYoutubeArrayDAO;
+import com.ipartek.formacion.video.accessodatos.CrudAble;
+import com.ipartek.formacion.video.accessodatos.VideoYoutubeArrayDAO;
 import com.ipartek.formacion.video.pojo.VideoYoutube;
 @SuppressWarnings("unused")
 public class VideoYoutubeMain {
