@@ -22,6 +22,9 @@ public class Prueba1 {
 	public enum Genero { MUJER, HOMBRE };
 	
 	public static void main(String[] args) {
+		
+	}
+	public static void mainGen(String[] args) {
 		Genero miGenero;
 		
 		miGenero = Genero.HOMBRE;

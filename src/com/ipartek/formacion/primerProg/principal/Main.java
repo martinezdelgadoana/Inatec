@@ -2,8 +2,6 @@ package com.ipartek.formacion.primerProg.principal;
 
 import java.util.Date;
 
-import com.ipartek.formacion.primerProg.personas.Persona;
-
 
 public class Main {
 
